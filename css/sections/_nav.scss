@@ -1,2 +1,34 @@
 @use "../utilities/variables" as *;
-@use"../utilities/mixins" as *;
+@use "../utilities/mixins" as *;
+.nav {
+  background-color: $light-green;
+  padding: 2em 0;
+  &__container {
+    @include flex(space-around, center);
+  }
+  &__left {
+    width: 10%;
+    ul {
+      li {
+        list-style-type: none;
+        color: black;
+      }
+    }
+  }
+  &__right {
+    width: 90%;
+    ul {
+      list-style-type: none;
+      @include flex(flex-end, center);
+      gap: 2em;
+      li {
+        list-style-type: none;
+        cursor: pointer;
+        &:hover {
+          background-color: $orange;
+          color: $white;
+        }
+      }
+    }
+  }
+}
