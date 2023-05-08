@@ -1,2 +1,8 @@
 @use "../utilities/variables" as *;
 @use"../utilities/mixins" as *;
+.hero{
+    background-image: url("../../images/jace.jpg");
+    background-repeat: no-repeat;
+    height: 80vh;
+    width:100vw;
+}
