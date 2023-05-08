@@ -1,0 +1,55 @@
+@use "../utilities/mixins" as *;
+@use "../utilities/variables" as *;
+.contact {
+  &__heading {
+    text-align: center;
+    h2{
+        font-size: 3.5rem;
+        color: $light-green;
+    }
+    p{
+        font-size: 1.5rem;
+
+    }
+  }
+  &__container {
+    @include flex(space-around, center);
+    &__left {
+        margin-top: 4em;
+        img{
+            margin-left: 8em
+        }
+    }
+
+    &__right {
+      @include flex-col();
+      box-shadow: 4px 4px 5px 6px $light-green;
+      padding: 5.5em 2em;
+      gap: 2em;
+      margin-top: 3em;
+      &-email {
+        input {
+          width: 100%;
+        }
+      }
+
+      &-textarea {
+        width: 100%;
+      }
+      button {
+        padding: 0.9em 2em;
+        width: 40%;
+        margin: 0 auto;
+        border: none;
+        background-color: $light-green;
+        color: $white;
+      }
+
+     
+    }
+
+    input {
+      padding: 1.5em 3em;
+    }
+  }
+}

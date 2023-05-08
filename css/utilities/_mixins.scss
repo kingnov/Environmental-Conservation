@@ -4,3 +4,10 @@
     align-items:$align;
     flex-direction:$direction;
 }
+
+// @mixin flex-col($justify,$align,$direction:column){
+@mixin flex-col($direction:column){
+
+    display:flex;
+    flex-direction:$direction;
+}
