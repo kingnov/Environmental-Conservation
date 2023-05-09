@@ -1,8 +1,37 @@
 @use "../utilities/variables" as *;
 @use"../utilities/mixins" as *;
 .hero{
+     $blue:#1d267d;
+    text-align: center;
     background-image: url("../../images/jace.jpg");
     background-repeat: no-repeat;
     height: 80vh;
     width:100vw;
-}
+    @include flex(center,center, column);
+    &__content{
+        &__button{
+                &--blue{
+                    @include button($white,$blue);
+                    
+                }
+                &--red{
+                    @include button($white,$grey)
+                }
+            }
+        }
+    }
+    div{
+        width: 100%;
+        font-family: $font;
+        h1{
+            color: $blue;
+            font-size: 5rem;
+        }
+    p{
+        color:$pink;
+    }
+    }
+    
+    
+    
+

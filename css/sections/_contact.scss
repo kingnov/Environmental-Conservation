@@ -22,12 +22,13 @@
     }
 
     &__right {
-      @include flex-col();
+      @include flex(space-around,center);
       box-shadow: 4px 4px 5px 6px $light-green;
       padding: 5.5em 2em;
       gap: 2em;
       margin-top: 3em;
       &-email {
+        
         input {
           width: 100%;
         }
