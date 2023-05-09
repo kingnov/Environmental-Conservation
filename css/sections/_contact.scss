@@ -24,11 +24,16 @@
         }
     }
 
-    &__right {
+    &__right{
+      @include flex(space-around,center);
+      box-shadow: 4px 4px 5px 6px $light-green;
+      padding: 5.5em 2em;
+
       @include flex(space-around, center);
       flex-direction: column;
       box-shadow: 5px 5px 6px 8px $light-green;
       padding: 4.5em 4em;
+
       gap: 2em;
       margin-top: 1em;
       &__row{
@@ -38,6 +43,10 @@
       }
     
       &-email {
+
+        
+
+
 
         input {
           width: 100%;

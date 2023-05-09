@@ -56,10 +56,45 @@ a {
 }
 
 .hero {
+  text-align: center;
   background-image: url("../../images/jace.jpg");
   background-repeat: no-repeat;
   height: 80vh;
   width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero__content__button--blue {
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #1d267d;
+}
+.hero__content__button--red {
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #808080;
+}
+
+div {
+  width: 100%;
+  font-family: "Noto Sans", sans-serif;
+}
+div h1 {
+  color: #1d267d;
+  font-size: 5rem;
+}
+div p {
+  color: #eea539;
+}
+
+
 }
 
 .contact {
@@ -93,9 +128,14 @@ a {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+
+  box-shadow: 4px 4px 5px 6px #058804;
+  padding: 5.5em 2em;
+
   flex-direction: column;
   box-shadow: 5px 5px 6px 8px #058804;
   padding: 4.5em 4em;
+
   gap: 2em;
   margin-top: 1em;
 }
@@ -122,6 +162,39 @@ a {
 .contact__container input {
   padding: 1.5em 3em;
 }
+
+
+.objective {
+  margin: 2em 0;
+}
+.objective__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.objective__container__center {
+  width: 70%;
+  margin: 0 auto;
+}
+.objective__card {
+  width: 30%;
+  box-shadow: 0px 0px 3px #808080;
+  height: 55vh;
+}
+.objective__content {
+  padding: 1em;
+  text-align: center;
+  color: #808080;
+}
+.objective__content__button {
+  padding: 5em;
+  background-color: white;
+}
+.objective__content h3 {
+  margin-bottom: 3em;
+  color: #058804;
+  font-size: 5rem;
 
 .media-platforms {
   display: flex;
@@ -169,4 +242,5 @@ a {
 }
 .login__container input {
   padding: 1em 3em;
+
 }

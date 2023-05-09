@@ -5,10 +5,20 @@
     flex-direction:$direction;
 }
 
+
+@mixin button($color, $bg-color){
+padding: 1em;
+border: none;
+border-radius: 5px;
+color:$color;
+background-color: $bg-color;
+}
+
 // @mixin flex-col($justify,$align,$direction:column){
 @mixin flex-col($direction:column){
 
     display:flex;
     flex-direction:$direction;
 }
+
 
