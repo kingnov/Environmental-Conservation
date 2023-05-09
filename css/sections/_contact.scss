@@ -1,8 +1,11 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
 .contact {
+  background-color:$white;
+  width: 100%;
   &__heading {
     text-align: center;
+    
     h2{
         font-size: 3.5rem;
         color: $light-green;
@@ -22,12 +25,20 @@
     }
 
     &__right {
-      @include flex-col();
-      box-shadow: 4px 4px 5px 6px $light-green;
-      padding: 5.5em 2em;
+      @include flex(space-around, center);
+      flex-direction: column;
+      box-shadow: 5px 5px 6px 8px $light-green;
+      padding: 4.5em 4em;
       gap: 2em;
-      margin-top: 3em;
+      margin-top: 1em;
+      &__row{
+        @include flex(space-between, center);
+
+
+      }
+    
       &-email {
+
         input {
           width: 100%;
         }
@@ -52,4 +63,19 @@
       padding: 1.5em 3em;
     }
   }
+}
+.media-platforms{
+  @include flex(space-around, center);
+  p{
+    font-size: 30px;
+  }
+
+&__icons{
+  margin: 0 2em;
+}
+img{
+  background-color: $light-green;
+  border-radius: 2em
+  ;
+}
 }
