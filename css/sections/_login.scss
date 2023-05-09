@@ -1,0 +1,32 @@
+@use "../utilities/mixins" as *;
+@use "../utilities/variables" as *;
+.login{
+
+    @include flex(center);
+    flex-direction: column;
+
+    h1{
+        font-size: 3rem;
+        color: $white;
+    }
+    p{
+        font-size: 1.5rem;
+        color: $white;
+    }
+    background-image: url("../../images/nadine-marfurt-DMvLtqwQ46Q-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;width: 100vw;
+    height: 80vh;
+   ;
+
+    &__container{
+        @include flex(space-around, center,column);
+        gap: 3em;
+
+        input{
+            padding: 1em 3em;
+            // margin: 2em 0;
+
+        }
+    }
+}
