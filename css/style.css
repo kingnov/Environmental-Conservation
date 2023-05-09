@@ -63,7 +63,7 @@ a {
 }
 
 .contact {
-  background-color: lightgrey;
+  background-color: #fff;
   width: 100%;
 }
 .contact__heading {
@@ -138,4 +138,35 @@ a {
 .media-platforms img {
   background-color: #058804;
   border-radius: 2em;
+}
+
+.login {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-direction: column;
+  background-image: url("../../images/nadine-marfurt-DMvLtqwQ46Q-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 80vh;
+}
+.login h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+.login p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.login__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-direction: column;
+}
+.login__container input {
+  padding: 1em 3em;
 }
