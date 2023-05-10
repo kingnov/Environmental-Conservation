@@ -21,6 +21,9 @@ a {
 .nav {
   background-color: #058804;
   padding: 2em 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 .nav__container {
   display: flex;
@@ -34,6 +37,9 @@ a {
 .nav__left ul li {
   list-style-type: none;
   color: black;
+}
+.nav__left ul li a img {
+  filter: invert(3);
 }
 .nav__right {
   width: 90%;
@@ -54,10 +60,18 @@ a {
   background-color: #eea539;
   color: #fff;
 }
+.nav__right button {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 3px;
+}
 
 .hero {
   text-align: center;
-  background-image: url("../../images/jace.jpg");
+  gap: 1em;
+  gap: 1em;
+  gap: 1em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0)), url("../../images/jace.jpg");
   background-repeat: no-repeat;
   height: 80vh;
   width: 100vw;
@@ -79,6 +93,7 @@ a {
   border-radius: 5px;
   color: #fff;
   background-color: #808080;
+  margin: 0 2em;
 }
 .hero div {
   width: 100%;
@@ -90,6 +105,22 @@ a {
 }
 .hero div p {
   color: #eea539;
+}
+.hero h2 {
+  color: #fff;
+  margin: 2em;
+}
+.hero button {
+  gap: 2em;
+}
+.hero p {
+  color: #000;
+}
+.hero h3 {
+  color: #1d267d;
+}
+.hero h4 {
+  color: #058804;
 }
 
 .contact {
@@ -179,6 +210,13 @@ a {
 .objective {
   margin: 2em 0;
 }
+.objective h4 {
+  text-align: center;
+  border-bottom: 1em;
+  color: #058804;
+  font-size: 2rem;
+  margin: 2em;
+}
 .objective__container {
   display: flex;
   justify-content: space-between;
@@ -193,6 +231,7 @@ a {
   width: 30%;
   box-shadow: 0px 0px 3px #808080;
   height: 55vh;
+  padding: 1em;
 }
 .objective__content {
   padding: 1em;
@@ -207,6 +246,123 @@ a {
   margin-bottom: 3em;
   color: #058804;
   font-size: 5rem;
+}
+
+.programme {
+  margin: 2em 0;
+  text-align: center;
+}
+.programme h4 {
+  font-size: 2rem;
+  margin: 2em 0;
+}
+.programme__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.programme__container__center {
+  width: 70%;
+  margin: 0 auto;
+}
+.programme__card {
+  width: 30%;
+  box-shadow: 0px 0px 3px #808080;
+  height: 55vh;
+  padding: 1em;
+  margin: 1em;
+}
+.programme__content {
+  padding: 1em;
+}
+
+.testimonials {
+  margin: 2em 0;
+  text-align: center;
+}
+.testimonials__tittle {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 1)), url(../../images/pedro.jpg);
+  background-attachment: fixed;
+}
+.testimonials h4 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2em;
+}
+.testimonials__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 1em;
+  padding: 1em;
+}
+.testimonials__container__center {
+  width: 70%;
+  margin: 0 auto;
+}
+.testimonials__container__center__content {
+  width: 20%;
+}
+.testimonials__container__center p {
+  width: 50%;
+}
+.testimonials__container__content {
+  text-align: center;
+}
+.testimonials__container__content p {
+  color: #fff;
+}
+.testimonials__container__content img {
+  border-radius: 60%;
+  width: 200px;
+  height: 200px;
+}
+
+.footer {
+  background-color: #000;
+  margin: 2em 0;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.footer__container ul {
+  list-style-type: none;
+}
+.footer__container ul li {
+  color: #fff;
+}
+.footer__container__patnership h4 {
+  color: #fff;
+  font-size: 2rem;
+}
+.footer__container__patnership p {
+  color: #fff;
+}
+.footer__container__patnership ul {
+  display: flex;
+  justify-content: center;
+  align-items: row;
+  flex-direction: row;
+  margin-top: 2em;
+  gap: 2em;
+  list-style-type: none;
+  text-align: center;
+}
+.footer__container__patnership ul li a img {
+  filter: brightness(0);
+}
+.footer__container__patnership h4 {
+  text-align: center;
+}
+.footer__container__patnership p {
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
 }
 
 .signup {
