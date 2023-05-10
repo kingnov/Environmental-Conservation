@@ -15,8 +15,9 @@ background-color: $bg-color;
 }
 
 // @mixin flex-col($justify,$align,$direction:column){
-@mixin flex-col($direction:column){
-
+@mixin flex-col($justify,$align,$direction:column){
+    justify-content:$justify;
+    align-items:$align;
     display:flex;
     flex-direction:$direction;
 }
