@@ -1,0 +1,107 @@
+@use "../utilities/mixins" as *;
+@use "../utilities/variables" as *;
+
+.signup{
+    h1{
+        font-size: 3.5rem;
+        margin-bottom: 1.5em;
+    }
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(20, 3, 3, 0.951)),
+    url('../../images/thom-holmes-ClY4mpcnRXw-unsplash.jpg');;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    @include flex-col(center, center);
+    &__section{
+        @include flex-col(center, center);
+        .to__signup{
+            color:$white;
+            margin: 2em 0;
+            font-size: 1.5rem;
+            a{
+                color: #7bc27b;
+            }
+        }
+    }
+    &__container{
+        width: 100%;
+    }
+    &__profile{
+        background-color: $light-green;
+        padding: 2em;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        @include flex-col(center, center);
+        &__container{
+            @include flex(center, center)
+        }
+    }
+    &__form{
+        margin-top: -3em;
+        background-color: #d6d8de;
+        border-radius: 10px;
+        padding: 7em 3em 3em 3em;
+        width: 60vh;
+
+
+    }
+    &__details{
+        @include flex(flex-start, center);
+        background-color: #7bc27b;
+        margin-bottom: 1em;
+        // padding: 1em 0;
+        input{
+            padding: 1em;
+            border: none;
+            background-color: transparent;
+            width: 88%;
+            color: white;
+            font-size: 1rem;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                color: lightgray;
+            }
+            
+        }
+    }
+    &__icon{
+        background-color: $light-green;
+        width: 12%;
+        padding: 1.5em;
+    }
+    &__remember__forget{
+        @include flex(space-between,center);
+        margin-top: 2em;
+    }
+    &__forget{
+        font-style: italic;
+        @include flex(flex-end,center);
+        a{
+            color: $light-green;
+        }
+    }
+    &__button{
+        background-image: linear-gradient(transparent, white);
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 0 0 30px 30px;
+        cursor: pointer;
+        &:hover{
+            background-image: linear-gradient(transparent, #7bc27b);
+             button a{
+                color: $white;
+            }
+        }
+        button{
+            padding: 1.5em 3em;
+            border: none;
+            font-size: 1rem;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+}
