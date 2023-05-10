@@ -2,7 +2,7 @@
 @use "../utilities/variables" as *;
 .login{
 
-    @include flex(center);
+    @include flex(center, center);
     flex-direction: column;
 
     h1{

@@ -3,19 +3,26 @@
 .hero{
      $blue:#1d267d;
     text-align: center;
-    background-image: url("../../images/jace.jpg");
+        gap: 1em;
+        gap: 1em;
+        gap: 1em;
+    background-image:linear-gradient(rgba(0,0,0,.3),rgba(0,0,.3)),url("../../images/jace.jpg");
     background-repeat: no-repeat;
     height: 80vh;
     width:100vw;
     @include flex(center,center, column);
+    
     &__content{
         &__button{
                 &--blue{
-                    @include button($white,$blue);
+                    @include button($white,$blue)  
+
+                    
                     
                 }
                 &--red{
-                    @include button($white,$grey)
+                    @include button($white,$grey);
+                    margin:0 2em;
                 }
             }
         }
@@ -27,8 +34,21 @@
             color: $blue;
             font-size: 5rem;
         }
+        h2{
+            color:$white;
+            margin: 2em;
+        }
+        button{
+            gap: 2em;
+        }
     p{
-        color:$pink;
+        color:$black;
+    }
+    h3{
+        color: #1d267d;
+    }
+    h4{
+        color: $light-green;
     }
     }
     
