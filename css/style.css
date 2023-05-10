@@ -61,7 +61,6 @@ a {
   background-repeat: no-repeat;
   height: 80vh;
   width: 100vw;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,9 +91,6 @@ div h1 {
 }
 div p {
   color: #eea539;
-}
-
-
 }
 
 .contact {
@@ -128,14 +124,15 @@ div p {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-
   box-shadow: 4px 4px 5px 6px #058804;
   padding: 5.5em 2em;
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
   flex-direction: column;
   box-shadow: 5px 5px 6px 8px #058804;
   padding: 4.5em 4em;
-
   gap: 2em;
   margin-top: 1em;
 }
@@ -163,6 +160,22 @@ div p {
   padding: 1.5em 3em;
 }
 
+.media-platforms {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.media-platforms p {
+  font-size: 30px;
+}
+.media-platforms__icons {
+  margin: 0 2em;
+}
+.media-platforms img {
+  background-color: #058804;
+  border-radius: 2em;
+}
 
 .objective {
   margin: 2em 0;
@@ -195,30 +208,9 @@ div p {
   margin-bottom: 3em;
   color: #058804;
   font-size: 5rem;
-
-.media-platforms {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-}
-.media-platforms p {
-  font-size: 30px;
-}
-.media-platforms__icons {
-  margin: 0 2em;
-}
-.media-platforms img {
-  background-color: #058804;
-  border-radius: 2em;
 }
 
 .login {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  flex-direction: column;
   background-image: url("../../images/nadine-marfurt-DMvLtqwQ46Q-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -226,21 +218,40 @@ div p {
   height: 80vh;
 }
 .login h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #fff;
+  text-align: center;
 }
 .login p {
   font-size: 1.5rem;
   color: #fff;
+  text-align: center;
 }
 .login__container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row;
   flex-direction: column;
+  gap: 3em;
 }
 .login__container input {
   padding: 1em 3em;
+  margin: 1em 0;
+}
+.login__container .btn {
+  text-align: center;
+  border-radius: 2rem;
+}
+.login__container button {
+  border-radius: 2rem;
+  padding: 0.8em 1em;
+  text-align: center;
+}
 
+.signup-section {
+  background-image: url(../../images/mansi-gujarathi-bYoAsSLDM7s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 80vh;
 }

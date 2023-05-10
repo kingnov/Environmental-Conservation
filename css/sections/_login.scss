@@ -1,17 +1,15 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
 .login{
-
-    @include flex(center);
-    flex-direction: column;
-
     h1{
-        font-size: 3rem;
+        font-size: 4rem;
         color: $white;
+        text-align: center;
     }
     p{
         font-size: 1.5rem;
         color: $white;
+        text-align: center;
     }
     background-image: url("../../images/nadine-marfurt-DMvLtqwQ46Q-unsplash.jpg");
     background-repeat: no-repeat;
@@ -22,11 +20,18 @@
     &__container{
         @include flex(space-around, center,column);
         gap: 3em;
-
         input{
             padding: 1em 3em;
-            // margin: 2em 0;
-
+            margin: 1em 0;
+        }
+        .btn{
+            text-align: center;
+            border-radius: 2rem;
+        }
+        button{
+            border-radius: 2rem;
+            padding: 0.8em 1em;
+            text-align: center;
         }
     }
 }
