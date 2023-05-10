@@ -61,7 +61,6 @@ a {
   background-repeat: no-repeat;
   height: 80vh;
   width: 100vw;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,20 +80,16 @@ a {
   color: #fff;
   background-color: #808080;
 }
-
-div {
+.hero div {
   width: 100%;
   font-family: "Noto Sans", sans-serif;
 }
-div h1 {
+.hero div h1 {
   color: #1d267d;
   font-size: 5rem;
 }
-div p {
+.hero div p {
   color: #eea539;
-}
-
-
 }
 
 .contact {
@@ -128,14 +123,15 @@ div p {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-
   box-shadow: 4px 4px 5px 6px #058804;
   padding: 5.5em 2em;
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
   flex-direction: column;
   box-shadow: 5px 5px 6px 8px #058804;
   padding: 4.5em 4em;
-
   gap: 2em;
   margin-top: 1em;
 }
@@ -163,6 +159,22 @@ div p {
   padding: 1.5em 3em;
 }
 
+.media-platforms {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.media-platforms p {
+  font-size: 30px;
+}
+.media-platforms__icons {
+  margin: 0 2em;
+}
+.media-platforms img {
+  background-color: #058804;
+  border-radius: 2em;
+}
 
 .objective {
   margin: 2em 0;
@@ -195,52 +207,252 @@ div p {
   margin-bottom: 3em;
   color: #058804;
   font-size: 5rem;
+}
 
-.media-platforms {
+.signup {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(20, 3, 3, 0.951)), url("../../images/thom-holmes-ClY4mpcnRXw-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+}
+.signup h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5em;
+}
+.signup__section {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.signup__section .to__signup {
+  color: #fff;
+  margin: 2em 0;
+  font-size: 1.5rem;
+}
+.signup__section .to__signup a {
+  color: #7bc27b;
+}
+.signup__container {
+  width: 100%;
+}
+.signup__profile {
+  background-color: #058804;
+  padding: 2em;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.signup__profile__container {
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-.media-platforms p {
-  font-size: 30px;
+.signup__form {
+  margin-top: -3em;
+  background-color: #d6d8de;
+  border-radius: 10px;
+  padding: 7em 3em 3em 3em;
+  width: 60vh;
 }
-.media-platforms__icons {
-  margin: 0 2em;
+.signup__details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  background-color: #7bc27b;
+  margin-bottom: 1em;
 }
-.media-platforms img {
+.signup__details input {
+  padding: 1em;
+  border: none;
+  background-color: transparent;
+  width: 88%;
+  color: white;
+  font-size: 1rem;
+}
+.signup__details input:focus {
+  outline: none;
+}
+.signup__details input::-moz-placeholder {
+  color: lightgray;
+}
+.signup__details input::placeholder {
+  color: lightgray;
+}
+.signup__icon {
   background-color: #058804;
-  border-radius: 2em;
+  width: 12%;
+  padding: 1.5em;
+}
+.signup__remember__forget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2em;
+}
+.signup__forget {
+  font-style: italic;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+.signup__forget a {
+  color: #058804;
+}
+.signup__button {
+  background-image: linear-gradient(transparent, white);
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+  cursor: pointer;
+}
+.signup__button:hover {
+  background-image: linear-gradient(transparent, #7bc27b);
+}
+.signup__button:hover button a {
+  color: #fff;
+}
+.signup__button button {
+  padding: 1.5em 3em;
+  border: none;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .login {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  flex-direction: column;
-  background-image: url("../../images/nadine-marfurt-DMvLtqwQ46Q-unsplash.jpg");
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(20, 3, 3, 0.951)), url("../../images/nadine-marfurt-DMvLtqwQ46Q-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
-  height: 80vh;
-}
-.login h1 {
-  font-size: 3rem;
-  color: #fff;
-}
-.login p {
-  font-size: 1.5rem;
-  color: #fff;
-}
-.login__container {
-  display: flex;
-  justify-content: space-around;
+  height: 100vh;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
+  display: flex;
   flex-direction: column;
 }
-.login__container input {
-  padding: 1em 3em;
-
+.login h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2em;
+}
+.login__section {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.login__section .to__signup {
+  color: #fff;
+  margin: 2em 0;
+  font-size: 1.5rem;
+}
+.login__section .to__signup a {
+  color: #7bc27b;
+}
+.login__container {
+  width: 100%;
+}
+.login__profile {
+  background-color: #058804;
+  padding: 2em;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.login__profile__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.login__form {
+  margin-top: -3em;
+  background-color: #d6d8de;
+  border-radius: 10px;
+  padding: 7em 3em 3em 3em;
+  width: 100%;
+}
+.login__details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  background-color: #7bc27b;
+  margin-bottom: 1em;
+}
+.login__details input {
+  padding: 1em;
+  border: none;
+  background-color: transparent;
+  width: 88%;
+  color: white;
+  font-size: 1rem;
+}
+.login__details input:focus {
+  outline: none;
+}
+.login__details input::-moz-placeholder {
+  color: lightgray;
+}
+.login__details input::placeholder {
+  color: lightgray;
+}
+.login__icon {
+  background-color: #058804;
+  width: 12%;
+  padding: 1.5em;
+}
+.login__remember__forget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2em;
+}
+.login__forget {
+  font-style: italic;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+.login__forget a {
+  color: #058804;
+}
+.login__button {
+  background-image: linear-gradient(transparent, white);
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+  cursor: pointer;
+}
+.login__button:hover {
+  background-image: linear-gradient(transparent, #7bc27b);
+}
+.login__button:hover button a {
+  color: #fff;
+}
+.login__button button {
+  padding: 1.5em 3em;
+  border: none;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
 }
