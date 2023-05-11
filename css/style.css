@@ -57,7 +57,7 @@ a {
   cursor: pointer;
 }
 .nav__right ul li:hover {
-  background-color: #eea539;
+  background-color: #f7c0c6;
   color: #fff;
 }
 .nav__right button {
@@ -104,7 +104,7 @@ a {
   font-size: 5rem;
 }
 .hero div p {
-  color: #eea539;
+  color: #f7c0c6;
 }
 .hero h2 {
   color: #fff;
@@ -256,6 +256,7 @@ a {
 .programme h4 {
   font-size: 2rem;
   margin: 2em 0;
+  color: #058804;
 }
 .programme__container {
   display: flex;
@@ -290,6 +291,7 @@ a {
   text-align: center;
   font-size: 2rem;
   margin: 2em;
+  color: #058804;
 }
 .testimonials__container {
   display: flex;
@@ -333,9 +335,17 @@ a {
 }
 .footer__container ul {
   list-style-type: none;
+  background-color: #058804;
 }
 .footer__container ul li {
   color: #fff;
+  padding: 0.5em;
+  margin-right: 2em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
 }
 .footer__container__patnership h4 {
   color: #fff;
@@ -359,11 +369,50 @@ a {
 }
 .footer__container__patnership h4 {
   text-align: center;
+  color: #058804;
 }
 .footer__container__patnership p {
   text-align: center;
   margin: 0 auto;
   width: 60%;
+}
+
+.upload-land h3 {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: #000;
+  margin-top: 8em;
+  margin-bottom: 2em;
+}
+.upload-land__container {
+  justify-content: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 60vh;
+  background-image: url(../../images/zoe.jpg);
+}
+.upload-land__container h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #000;
+}
+.upload-land__container p {
+  width: 100%;
+  font-size: 1.5em;
+  color: #000;
+  border-bottom: 1em;
+}
+.upload-land__container input {
+  padding: 1em;
+  border-bottom: 1em;
+  color: #1d267d;
+  display: block;
+  margin-top: 1em;
+  border: 1px solid #1d267d;
+  outline: none;
 }
 
 .signup {

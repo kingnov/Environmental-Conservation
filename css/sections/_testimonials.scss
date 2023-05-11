@@ -11,6 +11,7 @@
         text-align: center;
         font-size: 2rem;
         margin: 2em;
+        color:$light-green;
     }
     &__container{
         @include flex( space-between,flex-start);
