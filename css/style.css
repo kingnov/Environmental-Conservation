@@ -129,6 +129,7 @@ a {
 }
 .contact__heading {
   text-align: center;
+  margin-top: 8em;
 }
 .contact__heading h2 {
   font-size: 3.5rem;
@@ -611,4 +612,69 @@ a {
   font-size: 1rem;
   background-color: transparent;
   cursor: pointer;
+}
+
+.donation {
+  background-image: url("../../images/donate.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.donation__container__content {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
+.donation__container__content h1 {
+  font-size: 5em;
+  color: orange;
+  margin-top: 1.4em;
+}
+.donation__container__content p {
+  font-size: 0.7em;
+  color: #000;
+}
+
+.donation__details {
+  text-align: left;
+  padding-left: 6em;
+}
+.donation__details h2 {
+  color: orange;
+  font-size: 2em;
+}
+.donation__details input {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0.8em;
+  gap: 1em;
+  margin: 2em 0;
+  font-size: 1.1em;
+  color: grey;
+}
+
+.payment {
+  padding-left: 6em;
+  text-align: left;
+  font-size: 1.3em;
+}
+.payment ol li {
+  color: #fff;
+}
+.payment h2 {
+  font-size: 2em;
+  color: orange;
+}
+.payment P {
+  color: #fff;
+}
+.payment__account {
+  padding-left: 6.2em;
 }
