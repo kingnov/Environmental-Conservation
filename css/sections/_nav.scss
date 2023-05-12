@@ -1,0 +1,48 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+.nav {
+  background-color: $light-green;
+  padding: 2em 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  &__container {
+    @include flex(space-around, center);
+  }
+  &__left {
+    width: 10%;
+    ul {
+      li {
+        list-style-type: none;
+        color: black;
+        a{
+          img{
+            filter: invert(3);
+          }
+        }
+      }
+    }
+  }
+  &__right {
+    width: 90%;
+    ul {
+      list-style-type: none;
+      @include flex(flex-end, center);
+      gap: 2em;
+      li {
+        list-style-type: none;
+        cursor: pointer;
+        &:hover {
+          background-color: $pink;
+          color: $white;
+        }
+      }
+    }
+
+    button{
+      padding: 1em 2em;
+      border: none;
+      border-radius: 3px;
+    }
+  }
+}

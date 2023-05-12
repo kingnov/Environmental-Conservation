@@ -1,0 +1,30 @@
+@use "../utilities/variables" as *;
+@use"../utilities/mixins" as *;
+.programme{
+    margin: 2em 0;
+    text-align: center;
+    h4{
+        font-size: 2rem;
+        margin: 2em 0;
+        color: $light-green;
+    }
+    &__container{
+        @include flex( space-between,flex-start);
+        &__center{
+            width: 70%;
+            margin:0 auto;
+        }
+    }
+    &__card{
+        width:30%;
+        box-shadow:0px 0px 3px $grey;
+        height: 55vh;
+        padding: 1em;
+        margin: 1em;
+        
+    }
+    &__content{
+        padding: 1em;
+    }
+
+}

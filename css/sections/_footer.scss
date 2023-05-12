@@ -1,0 +1,69 @@
+@use "../utilities/variables" as *;
+@use"../utilities/mixins" as *;
+.footer{
+    background-color: $black;
+
+    margin:2em 0;
+    &__container{
+        @include flex( space-around,center);
+
+        ul {
+            list-style-type: none;
+            // @include flex( column,center);
+            background-color: $light-green;
+
+            li{
+                color: $white;
+                padding: .5em;
+                margin-right: 2em;
+                @include flex( flex-start,center);
+                gap: 1em;
+            }
+
+        
+        }
+       &__patnership{
+        // @include flex( space-around,flex-start);
+h4{
+    color: $white;
+    font-size: 2rem;
+}
+
+p{
+    color: $white;
+
+}
+
+        ul{
+            @include flex(center,row);
+            margin-top: 2em;
+
+gap: 2em;
+            list-style-type: none;
+            text-align: center;
+
+            
+                li{
+                    a{
+                        img{
+                            filter: brightness(0);
+
+                        }
+                    }
+                }
+        
+        }
+
+        h4{
+            text-align: center;
+            color: $light-green;
+        }
+
+        p{
+            text-align: center;
+            margin: 0 auto;
+            width: 60%;
+        }
+       } 
+    }
+}

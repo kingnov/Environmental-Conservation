@@ -1,0 +1,63 @@
+@use "../utilities/mixins" as *;
+@use "../utilities/variables" as *;
+
+.donation {
+    background-image: url("../../images/donate.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  @include flex-col(flex-start, center, column);
+  &__container__content {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 5em;
+      color: orange;
+      margin-top: 1.4em;
+    }
+    p {
+      font-size: 0.7em;
+      color: $black;
+    }
+  }
+}
+.donation__details {
+  text-align: left;
+  padding-left: 6em;
+  h2{
+    color: orange;
+    font-size: 2em;
+  }
+  input {
+    @include flex-col(flex-start, center, column);
+    padding: 0.8em;
+    gap: 1em;
+    margin: 2em 0;
+    font-size: 1.1em;
+    color: grey;
+  }
+}
+.payment{
+
+    ol{
+        li{
+            color:$white;
+        }
+    }
+    padding-left: 6em;
+    text-align: left;
+    font-size: 1.3em;
+    h2{
+        font-size: 2em;
+        color: orange;
+    }
+    P{
+        color: $white;
+    }
+    &__account{
+        padding-left: 6.2em;
+    }
+}

@@ -1,0 +1,44 @@
+@use "../utilities/variables" as *;
+@use"../utilities/mixins" as *;
+.testimonials{
+    margin: 2em 0;
+    text-align: center;
+ &__tittle{
+    background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,.7)),url(../../images/pedro.jpg);
+    background-attachment: fixed;
+ }
+    h4{
+        text-align: center;
+        font-size: 2rem;
+        margin: 2em;
+        color:$light-green;
+    }
+    &__container{
+        @include flex( space-between,flex-start);
+        gap: 1em;
+        padding: 1em;
+        &__center{
+            width: 70%;
+            margin:0 auto;
+            &__content{
+                width: 20%;
+            }
+            p{
+                width: 50%;
+               
+            }
+        }
+       &__content{
+            text-align: center;
+        p{
+            color: $white;
+        }
+
+        img{
+            border-radius: 60%;
+            width: 200px;
+            height: 200px;
+        }
+        }
+    }
+    }
