@@ -433,9 +433,8 @@ a {
   flex-direction: column;
 }
 .signup h1 {
-  font-size: 3rem;
-  margin-top: 4em;
-  margin-bottom: 0.2em;
+  font-size: 3.5rem;
+  margin-bottom: 1.5em;
 }
 .signup__section {
   justify-content: center;
