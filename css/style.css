@@ -426,8 +426,9 @@ a {
   flex-direction: column;
 }
 .signup h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1.5em;
+  font-size: 3rem;
+  margin-bottom: 0.2em;
+  margin-top: 4em;
 }
 .signup__section {
   justify-content: center;
@@ -552,6 +553,7 @@ a {
 .login h1 {
   font-size: 3.5rem;
   margin-bottom: 2em;
+  margin-top: 2em;
 }
 .login__section {
   justify-content: center;
